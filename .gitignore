@@ -213,8 +213,34 @@ tempCodeRunnerFile.py
 
 # Marimo
 marimo/_static/
-marimo/_lsp/
+marimo/_lsp/  
 __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local Python environment and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Large raw database dumps
+*.sql
+*.sql.gz
+
+# Local datasets and generated pipeline outputs
+data/
+outputs/
+
+# Model artefacts - review individually before publishing
+# models/
+
