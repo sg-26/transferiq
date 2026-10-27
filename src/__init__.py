@@ -1,1 +1,1 @@
-"""TransferIQ football analytics pipeline."""
+# src package
