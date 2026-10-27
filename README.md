@@ -68,11 +68,13 @@ transferiq/
 │   │   ├── pareto_engine.py
 │   │   └── scenario_pareto.py
 │   ├── pricing/
+│   │   ├── __init__.py
 │   │   ├── extend_master_pricing.py
 │   │   ├── price_scenarios.py
 │   │   ├── sale_price_model.py
 │   │   └── sale_sanity_check.py
 │   ├── reporting/
+│   │   ├── __init__.py
 │   │   └── scenario_scoring.py
 │   └── simulation/
 │       ├── __init__.py
