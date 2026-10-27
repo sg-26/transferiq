@@ -38,22 +38,51 @@ These are model-generated estimates, not observed outcomes or predictions guaran
 ```text
 transferiq/
 ├── docs/
+│   ├── DATA_AUDIT.md
 │   ├── TRANSFER_DATA_ACQUISITION.md
 │   ├── TRANSFER_DATA_COVERAGE.md
-│   ├── DATA_AUDIT.md
 │   ├── feature_importance.csv
 │   └── sale_sanity_check.json
 ├── src/
+│   ├── __init__.py
 │   ├── dashboard/
+│   │   └── app.py
 │   ├── data/
+│   │   ├── __init__.py
+│   │   ├── build_club_season_dataset.py
+│   │   ├── build_master_dataset.py
+│   │   ├── extract_standings.py
+│   │   ├── fetch_football_data_co_uk.py
+│   │   ├── fix_2022_23_standings.py
+│   │   ├── integrate_financials_and_la_fabrica.py
+│   │   └── validate_transfer_data.py
 │   ├── features/
+│   │   ├── __init__.py
+│   │   └── build_features.py
 │   ├── models/
+│   │   ├── __init__.py
+│   │   ├── club_sporting_model.py
+│   │   └── sporting_risk_model.py
 │   ├── optimization/
+│   │   ├── __init__.py
+│   │   ├── pareto_engine.py
+│   │   └── scenario_pareto.py
 │   ├── pricing/
+│   │   ├── extend_master_pricing.py
+│   │   ├── price_scenarios.py
+│   │   ├── sale_price_model.py
+│   │   └── sale_sanity_check.py
 │   ├── reporting/
+│   │   └── scenario_scoring.py
 │   └── simulation/
-├── run_pipeline.py
-└── README.md
+│       ├── __init__.py
+│       ├── buy_side.py
+│       ├── simulate_scenarios.py
+│       └── squad_counterfactual.py
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── run_pipeline.py
 ```
 
 ## Data and Reproducibility
