@@ -1,0 +1,92 @@
+{
+  "sanity_check": "review",
+  "realized_fee_check": {
+    "n_realized_sales": 18,
+    "within_+/-50%": 50.0,
+    "log_mape": 0.76,
+    "note": "prediction uses only market value + year (age/pos linker too thin); model is intentionally conservative, so large fees are under-predicted.",
+    "examples": [
+      {
+        "player_name": "Casemiro",
+        "transfer_date": "2022-08-22",
+        "price": 70650000,
+        "predicted": 54520000
+      },
+      {
+        "player_name": "Nico Paz",
+        "transfer_date": "2024-08-25",
+        "price": 66000000,
+        "predicted": 9510226
+      },
+      {
+        "player_name": "Rapha\u00ebl Varane",
+        "transfer_date": "2021-08-14",
+        "price": 40000000,
+        "predicted": 43240000
+      },
+      {
+        "player_name": "Martin \u00d8degaard",
+        "transfer_date": "2021-08-20",
+        "price": 35000000,
+        "predicted": 54520000
+      },
+      {
+        "player_name": "V\u00edctor Mu\u00f1oz",
+        "transfer_date": "2025-07-11",
+        "price": 25000000,
+        "predicted": 1363000
+      }
+    ]
+  },
+  "historical_decision_anchors": [
+    {
+      "player": "Rapha\u00ebl Varane",
+      "transfer_year": 2021,
+      "realized_fee_m": 40.0,
+      "market_value_at_transfer_m": 70.0,
+      "realized_discount": 0.57,
+      "model_discount": 0.62
+    },
+    {
+      "player": "Martin \u00d8degaard",
+      "transfer_year": 2021,
+      "realized_fee_m": 35.0,
+      "market_value_at_transfer_m": 40.0,
+      "realized_discount": 0.88,
+      "model_discount": 1.36
+    },
+    {
+      "player": "Casemiro",
+      "transfer_year": 2022,
+      "realized_fee_m": 70.7,
+      "market_value_at_transfer_m": 40.0,
+      "realized_discount": 1.77,
+      "model_discount": 1.36
+    }
+  ],
+  "illustrative_decision_cards": [
+    {
+      "player": "Vin\u00edcius J\u00fanior",
+      "type": "illustrative (current squad)",
+      "predicted_fee_m": 123.5,
+      "wage_obligation_avoided_m": 25.4,
+      "predicted_points_lost": -7.8
+    },
+    {
+      "player": "J. Bellingham",
+      "type": "illustrative (current squad)",
+      "predicted_fee_m": 114.7,
+      "wage_obligation_avoided_m": 23.6,
+      "predicted_points_lost": -5.1
+    },
+    {
+      "player": "K. Mbapp\u00e9",
+      "type": "illustrative (current squad)",
+      "predicted_fee_m": 105.0,
+      "wage_obligation_avoided_m": 21.6,
+      "predicted_points_lost": -12.8
+    }
+  ],
+  "confidence_note": "Sale-price discounts are fit on only 18 non-free RM sales; wage figures are heuristic estimates; deltas use the attack-driven xP model. Direction is indicative, not a claim of predictive precision.",
+  "as_of": "2026-09"
+}
