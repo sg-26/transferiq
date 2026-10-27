@@ -1,0 +1,28 @@
+{
+  "model_strategy": "Structural Expected-Points (Poisson simulator) + Ridge capacity mapping calibrated on pooled team-seasons",
+  "reference_season_id": 189974,
+  "attack_r2": 0.9641689761265642,
+  "defence_r2": 0.531392732885716,
+  "loocv": {
+    "n": 34,
+    "rmse_points": 7.33,
+    "mae_points": 5.96,
+    "r2_points": 0.834,
+    "corr": 0.92
+  },
+  "monotonicity_pass": true,
+  "attack_coefs_std_units": {
+    "total_goal_contributions": 9.723316142112997,
+    "total_shots": 2.945061185797241,
+    "total_assists": 3.51017192196381
+  },
+  "defence_coefs_std_units": {
+    "total_market_value": -5.9195525141398555,
+    "total_interceptions": 0.4227120625493801,
+    "count_DF": 3.109306212326893,
+    "squad_minutes_utilization": -2.1882100565420792,
+    "count_GK": 1.886045838076142,
+    "avg_age": -1.4673496952219005
+  },
+  "n_transitions": 34
+}
